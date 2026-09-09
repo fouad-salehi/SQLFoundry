@@ -1,0 +1,80 @@
+# Library Management System
+
+A real-world SQL database design for a library management system, built as part of [SQLFoundry](../).
+
+## Overview
+
+This project provides a complete relational database for managing the core operations of a library.
+
+It is designed as a standalone MySQL database that can be created and populated by running a single SQL file.
+
+## Features
+
+* Book management
+* Author management
+* Publisher management
+* Book categories
+* Multiple physical copies of books
+* Library members
+* Librarians
+* Shelves and book locations
+* Book borrowing and returns
+* Book reservations
+* Fines and payments
+* Sample data
+* Useful business queries
+* Database views
+* Primary keys, foreign keys, constraints and indexes
+
+## Database Structure
+
+The database includes the following main entities:
+
+* `authors`
+* `publishers`
+* `categories`
+* `books`
+* `book_authors`
+* `members`
+* `librarians`
+* `shelves`
+* `book_copies`
+* `loans`
+* `reservations`
+* `fines`
+
+## Requirements
+
+* MySQL 8.0 or later
+
+## Usage
+
+Run the following file in your MySQL environment:
+
+```text
+library.sql
+```
+
+The script automatically:
+
+1. Creates the `library_db` database.
+2. Creates all required tables and relationships.
+3. Adds indexes and constraints.
+4. Inserts sample data.
+5. Creates useful database views.
+6. Includes example business queries.
+
+No additional SQL files are required.
+
+## Project Structure
+
+```text
+library/
+├── README.md
+├── LICENSE
+└── library.sql
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

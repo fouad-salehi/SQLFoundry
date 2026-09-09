@@ -1,0 +1,98 @@
+# Hospital Management System
+
+A standalone relational database for managing hospital operations, including patients, doctors, departments, appointments, medical records, prescriptions, admissions, rooms, bills, and payments.
+
+## Requirements
+
+* MySQL 8.0+
+
+## Usage
+
+Run the SQL file directly with MySQL:
+
+```bash
+mysql -u your_username -p < hospital.sql
+```
+
+The script automatically creates the `hospital_db` database and all required tables, relationships, views, and sample data.
+
+## Project Structure
+
+```text
+hospital/
+├── README.md
+├── LICENSE
+└── hospital.sql
+```
+
+## Main Tables
+
+* `departments` — Hospital departments
+* `doctors` — Doctors and their specializations
+* `patients` — Patient information
+* `appointments` — Patient appointments
+* `medical_records` — Diagnoses and treatment records
+* `medications` — Medication inventory
+* `prescriptions` — Prescriptions issued by doctors
+* `prescription_items` — Medications included in prescriptions
+* `rooms` — Hospital rooms and operational status
+* `admissions` — Patient admissions and discharges
+* `bills` — Patient billing records
+* `payments` — Bill payments and transactions
+
+## Features
+
+* Patient management
+* Doctor and department management
+* Appointment scheduling
+* Medical history tracking
+* Diagnosis and treatment records
+* Prescription management
+* Medication inventory tracking
+* Hospital room management
+* Patient admission tracking
+* Billing and payment management
+* Foreign keys and relational integrity
+* Indexes for common queries
+* MySQL `CHECK` constraints
+* Sample data for testing
+* Ready-to-use database views
+* Example SQL queries
+
+## Included Views
+
+### `doctor_directory`
+
+Provides doctor information together with their department and specialization.
+
+### `upcoming_appointments`
+
+Lists scheduled and confirmed appointments with patient and doctor details.
+
+### `active_admissions`
+
+Shows patients who are currently admitted.
+
+### `patient_medical_history`
+
+Combines patients, doctors, diagnoses, symptoms, and treatments into a convenient medical-history view.
+
+### `bill_payment_summary`
+
+Shows bill totals, completed payments, and remaining balances.
+
+### `available_rooms`
+
+Lists hospital rooms currently available for admission.
+
+## Database
+
+The database created by this project is:
+
+```text
+hospital_db
+```
+
+## License
+
+This project is licensed under the MIT License.

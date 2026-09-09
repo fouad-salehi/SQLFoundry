@@ -1,0 +1,90 @@
+# Hotel Management System
+
+A standalone relational database for managing hotel operations, including rooms, guests, reservations, employees, services, invoices, and payments.
+
+## Requirements
+
+* MySQL 8.0+
+
+## Usage
+
+Run the SQL file directly with MySQL:
+
+```bash
+mysql -u your_username -p < hotel.sql
+```
+
+The script automatically creates the `hotel_db` database and all required tables, relationships, views, and sample data.
+
+## Project Structure
+
+```text
+hotel/
+├── README.md
+├── LICENSE
+└── hotel.sql
+```
+
+## Main Tables
+
+* `room_types` — Room categories, capacities, and base prices
+* `rooms` — Hotel rooms and their operational status
+* `guests` — Guest information
+* `employees` — Hotel staff and roles
+* `reservations` — Room reservations and stays
+* `reservation_guests` — Additional guests associated with reservations
+* `services` — Hotel services
+* `service_orders` — Services requested by guests
+* `invoices` — Reservation invoices
+* `payments` — Invoice payments and transaction records
+
+## Features
+
+* Room and room-type management
+* Guest management
+* Employee management
+* Reservation lifecycle tracking
+* Multiple guests per reservation
+* Hotel service management
+* Service order tracking
+* Invoice and payment management
+* Foreign keys and relational integrity
+* Indexes for common queries
+* MySQL `CHECK` constraints
+* Sample data for testing
+* Ready-to-use database views
+* Example SQL queries
+
+## Included Views
+
+### `available_rooms`
+
+Lists rooms currently available for booking.
+
+### `active_reservations`
+
+Provides a simplified view of confirmed and checked-in reservations.
+
+### `service_order_details`
+
+Combines guest, reservation, and service information with calculated service totals.
+
+### `invoice_payment_summary`
+
+Shows invoice totals, paid amounts, and remaining balances.
+
+### `room_occupancy`
+
+Provides an overview of room status and active reservations.
+
+## Database
+
+The database created by this project is:
+
+```text
+hotel_db
+```
+
+## License
+
+This project is licensed under the MIT License.

@@ -1,0 +1,101 @@
+# School Management System
+
+A standalone relational database for managing school operations, including students, teachers, departments, courses, classes, attendance, exams, grades, classrooms, academic years, and payments.
+
+## Requirements
+
+* MySQL 8.0+
+
+## Usage
+
+Run the SQL file directly with MySQL:
+
+```bash
+mysql -u your_username -p < school.sql
+```
+
+The script automatically creates the `school_db` database and all required tables, relationships, views, and sample data.
+
+## Project Structure
+
+```text
+school/
+├── README.md
+├── LICENSE
+└── school.sql
+```
+
+## Main Tables
+
+* `academic_years` — Academic year definitions
+* `departments` — School departments
+* `students` — Student information
+* `teachers` — Teacher and employee information
+* `courses` — Available courses
+* `classrooms` — Physical classrooms and laboratories
+* `classes` — Course sections and schedules
+* `enrollments` — Student course enrollments
+* `attendance` — Student attendance records
+* `exams` — Exams and assessments
+* `grades` — Student exam results
+* `payments` — Student financial transactions
+
+## Features
+
+* Student management
+* Teacher management
+* Department management
+* Course management
+* Academic year management
+* Class scheduling
+* Classroom management
+* Student enrollment
+* Attendance tracking
+* Exam management
+* Grade management
+* Payment tracking
+* Foreign keys and relational integrity
+* Unique constraints
+* Indexes for common queries
+* MySQL `CHECK` constraints
+* Sample data for testing
+* Ready-to-use database views
+* Example SQL queries
+
+## Included Views
+
+### `student_directory`
+
+Provides a simplified directory of students.
+
+### `class_schedule`
+
+Combines courses, teachers, classrooms, and class schedules.
+
+### `student_enrollments`
+
+Shows students and the courses in which they are enrolled.
+
+### `attendance_summary`
+
+Provides attendance statistics for each student.
+
+### `grade_summary`
+
+Calculates average exam performance by student and course.
+
+### `payment_summary`
+
+Shows student payment totals for the active academic year.
+
+## Database
+
+The database created by this project is:
+
+```text
+school_db
+```
+
+## License
+
+This project is licensed under the MIT License.

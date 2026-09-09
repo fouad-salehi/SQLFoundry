@@ -1,0 +1,93 @@
+# E-Commerce Management System
+
+A standalone relational database for managing an e-commerce platform, including customers, products, categories, inventory, orders, payments, coupons, addresses, and product reviews.
+
+## Requirements
+
+* MySQL 8.0+
+
+## Usage
+
+Run the SQL file directly with MySQL:
+
+```bash
+mysql -u your_username -p < ecommerce.sql
+```
+
+The script automatically creates the `ecommerce_db` database and all required tables, relationships, views, and sample data.
+
+## Project Structure
+
+```text
+ecommerce/
+├── README.md
+├── LICENSE
+└── ecommerce.sql
+```
+
+## Main Tables
+
+* `categories` — Product categories and hierarchical categories
+* `products` — Product catalog and pricing
+* `customers` — Customer accounts
+* `addresses` — Billing and shipping addresses
+* `inventory` — Product stock and reservations
+* `coupons` — Discount codes and usage limits
+* `orders` — Customer orders
+* `order_items` — Products included in orders
+* `payments` — Order payments and transactions
+* `reviews` — Customer product reviews
+
+## Features
+
+* Product and category management
+* Hierarchical product categories
+* Customer management
+* Billing and shipping addresses
+* Inventory tracking
+* Reserved stock tracking
+* Order management
+* Order item management
+* Payment tracking
+* Coupon and discount management
+* Product reviews and ratings
+* Foreign keys and relational integrity
+* Indexes for common queries
+* MySQL `CHECK` constraints
+* Sample data for testing
+* Ready-to-use database views
+* Example SQL queries
+
+## Included Views
+
+### `product_catalog`
+
+Provides product information together with category and current stock information.
+
+### `order_details`
+
+Combines customer, order, and product information with calculated line totals.
+
+### `customer_order_summary`
+
+Shows each customer's order count and total spending.
+
+### `low_stock_products`
+
+Lists products whose available quantity has reached or fallen below the reorder level.
+
+### `product_review_summary`
+
+Provides review counts and average ratings for products.
+
+## Database
+
+The database created by this project is:
+
+```text
+ecommerce_db
+```
+
+## License
+
+This project is licensed under the MIT License.

@@ -1,0 +1,87 @@
+# Restaurant Management System
+
+A complete relational database for managing a restaurant, including customers, employees, tables, menus, orders, reservations, payments, suppliers, ingredients, and inventory relationships.
+
+## Features
+
+* Customer management
+* Employee management
+* Restaurant table management
+* Menu categories
+* Menu item management
+* Order management
+* Order item tracking
+* Table reservations
+* Payment tracking
+* Supplier management
+* Ingredient inventory
+* Menu ingredient relationships
+* Foreign key relationships
+* Indexes and constraints
+* Sample data
+* Database views
+* Example SQL queries
+
+## Database
+
+**MySQL 8.0+**
+
+The project uses `utf8mb4` and is designed as a standalone database.
+
+## Usage
+
+Clone the SQLFoundry repository, enter the `restaurant` directory, and execute:
+
+```bash
+mysql -u your_username -p < restaurant.sql
+```
+
+Or open `restaurant.sql` in a MySQL-compatible database management tool and execute the entire file.
+
+The script automatically:
+
+1. Removes the existing `restaurant_db` database if it exists.
+2. Creates a new `restaurant_db` database.
+3. Creates all required tables.
+4. Creates relationships, indexes, and constraints.
+5. Inserts sample data.
+6. Creates useful database views.
+7. Provides example queries for common restaurant operations.
+
+## Project Structure
+
+```text
+restaurant/
+├── README.md
+├── LICENSE
+└── restaurant.sql
+```
+
+## Main Tables
+
+| Table                   | Description                         |
+| ----------------------- | ----------------------------------- |
+| `customers`             | Restaurant customers                |
+| `employees`             | Restaurant employees                |
+| `restaurant_tables`     | Restaurant tables                   |
+| `menu_categories`       | Menu categories                     |
+| `menu_items`            | Menu items                          |
+| `orders`                | Customer orders                     |
+| `order_items`           | Items included in orders            |
+| `reservations`          | Table reservations                  |
+| `payments`              | Order payments                      |
+| `suppliers`             | Ingredient suppliers                |
+| `ingredients`           | Restaurant ingredients and stock    |
+| `menu_item_ingredients` | Ingredients required for menu items |
+
+## Views
+
+* `menu_catalog`
+* `order_details`
+* `order_totals`
+* `low_stock_ingredients`
+* `reservation_schedule`
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.

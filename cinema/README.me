@@ -1,0 +1,104 @@
+# Cinema Management System
+
+A standalone relational database for managing cinemas, halls, seats, movies, genres, showtimes, customers, bookings, tickets, and payments.
+
+## Requirements
+
+* MySQL 8.0+
+
+## Usage
+
+Run the SQL file directly with MySQL:
+
+```bash
+mysql -u your_username -p < cinema.sql
+```
+
+The script automatically creates the `cinema_db` database, tables, relationships, views, and sample data.
+
+## Project Structure
+
+```text
+cinema/
+├── README.md
+├── LICENSE
+└── cinema.sql
+```
+
+## Main Tables
+
+* `cinemas` — Cinema locations
+* `halls` — Cinema halls and screens
+* `seats` — Individual hall seats
+* `genres` — Movie genres
+* `movies` — Movie catalog
+* `movie_genres` — Movie-to-genre relationships
+* `customers` — Customer accounts
+* `showtimes` — Scheduled movie screenings
+* `bookings` — Customer ticket bookings
+* `tickets` — Individual tickets and seats
+* `payments` — Booking payments
+
+## Features
+
+* Cinema management
+* Multiple cinema locations
+* Hall and screen management
+* Seat management
+* Movie catalog
+* Movie genre classification
+* Many-to-many movie/genre relationships
+* Showtime scheduling
+* Multiple screen formats
+* Customer management
+* Seat-specific ticket booking
+* Ticket type management
+* Payment tracking
+* Revenue reporting
+* Ticket sales reporting
+* Cinema performance reporting
+* Foreign keys and relational integrity
+* Unique constraints
+* Indexed lookup fields
+* MySQL `CHECK` constraints
+* Sample data
+* Ready-to-use database views
+* Example SQL queries
+
+## Included Views
+
+### `movie_catalog`
+
+Provides movie information together with associated genres.
+
+### `showtime_schedule`
+
+Provides a complete schedule containing cinema, hall, movie, format, timing, and ticket pricing.
+
+### `booking_details`
+
+Provides booking information including customer, movie, cinema, hall, showtime, ticket count, and total amount.
+
+### `ticket_sales_summary`
+
+Summarizes tickets sold and revenue by movie.
+
+### `payment_summary`
+
+Compares booking totals against completed payments.
+
+### `cinema_revenue_summary`
+
+Summarizes showtimes, ticket sales, and revenue for each cinema.
+
+## Database
+
+The database created by this project is:
+
+```text
+cinema_db
+```
+
+## License
+
+This project is licensed under the MIT License.

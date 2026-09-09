@@ -1,0 +1,107 @@
+# Inventory Management System
+
+A standalone relational database for managing products, suppliers, warehouses, inventory levels, purchase orders, stock transfers, and stock transactions.
+
+## Requirements
+
+* MySQL 8.0+
+
+## Usage
+
+Run the SQL file directly with MySQL:
+
+```bash
+mysql -u your_username -p < inventory.sql
+```
+
+The script automatically creates the `inventory_db` database, tables, relationships, views, and sample data.
+
+## Project Structure
+
+```text
+inventory/
+├── README.md
+├── LICENSE
+└── inventory.sql
+```
+
+## Main Tables
+
+* `categories` — Product categories
+* `suppliers` — Supplier information
+* `warehouses` — Warehouse locations and capacity
+* `products` — Product catalog and pricing
+* `inventory` — Product quantities per warehouse
+* `purchase_orders` — Supplier purchase orders
+* `purchase_order_items` — Products included in purchase orders
+* `stock_transfers` — Transfers between warehouses
+* `stock_transfer_items` — Products included in transfers
+* `stock_transactions` — Complete inventory movement history
+
+## Features
+
+* Product management
+* SKU and barcode tracking
+* Product categorization
+* Supplier management
+* Multi-warehouse inventory
+* Stock level tracking
+* Reserved stock tracking
+* Reorder level management
+* Purchase order management
+* Partial purchase receiving
+* Warehouse-to-warehouse transfers
+* Stock transaction history
+* Inventory valuation
+* Low-stock monitoring
+* Supplier purchasing reports
+* Warehouse stock reports
+* Foreign keys and relational integrity
+* Unique constraints
+* Indexed lookup fields
+* MySQL `CHECK` constraints
+* Sample data
+* Ready-to-use database views
+* Example SQL queries
+
+## Included Views
+
+### `inventory_overview`
+
+Provides detailed inventory information for every product and warehouse, including available quantity and inventory value.
+
+### `low_stock_products`
+
+Lists products whose available quantity has reached or fallen below the warehouse minimum.
+
+### `product_catalog`
+
+Provides a complete product catalog with category, supplier, pricing, and reorder information.
+
+### `purchase_order_summary`
+
+Summarizes purchase orders, item counts, order values, and received values.
+
+### `stock_transfer_summary`
+
+Summarizes warehouse transfers and the number of units being moved.
+
+### `stock_transaction_history`
+
+Provides a readable history of inventory movements.
+
+### `warehouse_stock_value`
+
+Calculates inventory quantity and total purchase-value per warehouse.
+
+## Database
+
+The database created by this project is:
+
+```text
+inventory_db
+```
+
+## License
+
+This project is licensed under the MIT License.

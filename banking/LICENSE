@@ -1,0 +1,101 @@
+# Banking Management System
+
+A standalone relational database for managing banking operations, including customers, branches, employees, accounts, cards, transactions, transfers, loans, and loan payments.
+
+## Requirements
+
+* MySQL 8.0+
+
+## Usage
+
+Run the SQL file directly with MySQL:
+
+```bash
+mysql -u your_username -p < banking.sql
+```
+
+The script automatically creates the `banking_db` database and all required tables, relationships, views, and sample data.
+
+## Project Structure
+
+```text
+banking/
+├── README.md
+├── LICENSE
+└── banking.sql
+```
+
+## Main Tables
+
+* `branches` — Bank branch information
+* `customers` — Customer information
+* `employees` — Branch employees
+* `account_types` — Available account types
+* `accounts` — Customer bank accounts
+* `beneficiaries` — Saved transfer beneficiaries
+* `cards` — Debit and credit cards
+* `transactions` — Account transactions
+* `loans` — Customer loans
+* `loan_payments` — Loan repayment records
+* `transfers` — Account-to-account transfers
+
+## Features
+
+* Customer management
+* Branch management
+* Employee management
+* Multiple account types
+* Bank account management
+* Account balance tracking
+* Debit and credit card management
+* Transaction history
+* Beneficiary management
+* Account transfers
+* Loan management
+* Loan repayment tracking
+* Branch statistics
+* Referential integrity with foreign keys
+* Unique constraints
+* Indexed lookup fields
+* MySQL `CHECK` constraints
+* Sample banking data
+* Ready-to-use database views
+* Example SQL queries
+
+## Included Views
+
+### `customer_accounts`
+
+Displays customers together with their accounts, account types, balances, and branches.
+
+### `account_transaction_history`
+
+Provides a readable transaction history including related accounts.
+
+### `active_loans`
+
+Lists all currently active customer loans.
+
+### `loan_payment_history`
+
+Provides detailed loan repayment records.
+
+### `branch_summary`
+
+Shows account, employee, and balance statistics for each branch.
+
+### `customer_loan_summary`
+
+Summarizes each customer's active outstanding loan balance.
+
+## Database
+
+The database created by this project is:
+
+```text
+banking_db
+```
+
+## License
+
+This project is licensed under the MIT License.

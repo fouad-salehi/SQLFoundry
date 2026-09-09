@@ -1,0 +1,160 @@
+# Airport Management System
+
+A standalone relational database system for managing airports, terminals, gates, airlines, aircraft, flights, passengers, bookings, tickets, baggage, check-ins, employees, and payments.
+
+Part of the **SQLFoundry** collection.
+
+## Requirements
+
+* MySQL 8.0+
+
+## Database
+
+```text
+airport_db
+```
+
+## Usage
+
+Enter the project directory:
+
+```bash
+cd airport
+```
+
+Run the SQL script:
+
+```bash
+mysql -u your_username -p < airport.sql
+```
+
+The script automatically:
+
+1. Drops the existing `airport_db` database.
+2. Creates a fresh `airport_db` database.
+3. Creates all tables and relationships.
+4. Inserts realistic sample data.
+5. Creates database views.
+6. Includes example reporting queries.
+
+> **Warning:** Running the script recreates the database and removes the existing `airport_db` database.
+
+## Project Structure
+
+```text
+airport/
+├── README.md
+├── LICENSE
+└── airport.sql
+```
+
+## Main Tables
+
+| Table        | Description           |
+| ------------ | --------------------- |
+| `airports`   | Airport information   |
+| `terminals`  | Airport terminals     |
+| `gates`      | Boarding gates        |
+| `airlines`   | Airline information   |
+| `aircrafts`  | Aircraft fleet        |
+| `routes`     | Flight routes         |
+| `flights`    | Scheduled flights     |
+| `passengers` | Passenger information |
+| `bookings`   | Flight reservations   |
+| `tickets`    | Issued tickets        |
+| `baggage`    | Passenger baggage     |
+| `employees`  | Airport employees     |
+| `check_ins`  | Passenger check-ins   |
+| `payments`   | Booking payments      |
+
+## Features
+
+* Airport management
+* Terminal management
+* Gate management
+* Airline management
+* Aircraft management
+* Route management
+* Flight scheduling
+* Passenger management
+* Booking management
+* Ticket management
+* Baggage tracking
+* Check-in management
+* Employee management
+* Payment tracking
+* Foreign key relationships
+* `CHECK` constraints for data validation
+* Indexed columns for common queries
+* Realistic sample data
+* Reusable SQL views
+* Example reporting queries
+
+## Views
+
+### `airport_directory`
+
+Lists active airports and their basic information.
+
+### `flight_schedule`
+
+Provides flight information including airline, origin, destination, terminal, gate, departure time, arrival time, fare, and status.
+
+### `booking_details`
+
+Combines booking, passenger, flight, airline, and route information.
+
+### `ticket_sales_summary`
+
+Summarizes tickets sold and ticket revenue for each flight.
+
+### `baggage_tracking`
+
+Provides baggage tracking information together with passenger and flight details.
+
+### `payment_summary`
+
+Shows booking amounts, completed payments, and remaining balances.
+
+## Database Relationships
+
+```text
+Airports
+├── Terminals
+│   └── Gates
+└── Employees
+
+Airlines
+└── Aircrafts
+
+Airports
+└── Routes
+    └── Flights
+        └── Bookings
+            ├── Tickets
+            ├── Baggage
+            ├── Check-ins
+            └── Payments
+
+Passengers
+└── Bookings
+```
+
+## Database Design
+
+The database is structured around a normalized relational model with connected entities representing the main components of an airport and flight management system.
+
+The schema uses:
+
+* Primary keys
+* Foreign keys
+* Referential relationships
+* `CHECK` constraints
+* Indexes
+* Relational views
+
+These structures provide data integrity and support common operational and reporting queries.
+
+## License
+
+This project is licensed under the MIT License.

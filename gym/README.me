@@ -1,0 +1,86 @@
+# Gym Management System
+
+A complete relational database for managing a gym, including members, trainers, memberships, payments, classes, attendance, exercises, and workout plans.
+
+## Features
+
+* Member management
+* Trainer management
+* Membership plans
+* Member subscriptions
+* Payment tracking
+* Fitness classes
+* Class schedules
+* Class enrollment
+* Attendance tracking
+* Exercise management
+* Personalized workout plans
+* Workout plan exercises
+* Foreign key relationships
+* Indexes and constraints
+* Sample data
+* Useful database views
+* Example SQL queries
+
+## Database
+
+**MySQL 8.0+**
+
+The project uses `utf8mb4` and is designed as a standalone database.
+
+## Usage
+
+Clone the SQLFoundry repository, enter the `gym` directory, and execute:
+
+```bash
+mysql -u your_username -p < gym.sql
+```
+
+Or open `gym.sql` in a MySQL-compatible database management tool and execute the entire file.
+
+The script automatically:
+
+1. Removes the existing `gym_db` database if it exists.
+2. Creates a new `gym_db` database.
+3. Creates all required tables.
+4. Creates relationships, indexes, and constraints.
+5. Inserts sample data.
+6. Creates useful database views.
+7. Provides example queries for common operations.
+
+## Project Structure
+
+```text
+gym/
+├── README.md
+├── LICENSE
+└── gym.sql
+```
+
+## Main Tables
+
+| Table                    | Description                         |
+| ------------------------ | ----------------------------------- |
+| `members`                | Gym members                         |
+| `trainers`               | Gym trainers                        |
+| `membership_plans`       | Available membership plans          |
+| `memberships`            | Member subscriptions                |
+| `payments`               | Membership payments                 |
+| `classes`                | Gym classes                         |
+| `class_schedules`        | Class schedules                     |
+| `class_enrollments`      | Member class registrations          |
+| `attendance`             | Member attendance records           |
+| `exercises`              | Exercise catalog                    |
+| `workout_plans`          | Personalized workout plans          |
+| `workout_plan_exercises` | Exercises assigned to workout plans |
+
+## Views
+
+* `active_memberships`
+* `member_payment_history`
+* `class_roster`
+* `member_attendance_summary`
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.

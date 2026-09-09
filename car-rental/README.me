@@ -1,0 +1,101 @@
+# Car Rental Management System
+
+A standalone relational database for managing car rental operations, including customers, branches, vehicles, reservations, rentals, insurance, payments, and vehicle maintenance.
+
+## Requirements
+
+* MySQL 8.0+
+
+## Usage
+
+Run the SQL file directly with MySQL:
+
+```bash
+mysql -u your_username -p < car-rental.sql
+```
+
+The script automatically creates the `car_rental_db` database and all required tables, relationships, views, and sample data.
+
+## Project Structure
+
+```text
+car-rental/
+├── README.md
+├── LICENSE
+└── car-rental.sql
+```
+
+## Main Tables
+
+* `branches` — Rental branch information
+* `customers` — Customer and driver's license information
+* `vehicle_categories` — Vehicle classes and rental pricing
+* `vehicles` — Vehicle inventory
+* `reservations` — Future vehicle reservations
+* `rentals` — Active and completed rentals
+* `insurance_plans` — Available insurance packages
+* `rental_insurance` — Insurance attached to rentals
+* `payments` — Rental payments
+* `maintenance_records` — Vehicle maintenance history
+
+## Features
+
+* Customer management
+* Driver's license tracking
+* Rental branch management
+* Vehicle inventory management
+* Vehicle categories and pricing
+* Reservation management
+* Rental lifecycle tracking
+* Pickup and return tracking
+* Mileage tracking
+* Insurance management
+* Rental payment tracking
+* Vehicle maintenance records
+* Revenue reporting
+* Vehicle utilization reporting
+* Foreign keys and relational integrity
+* Unique constraints
+* Indexed lookup fields
+* MySQL `CHECK` constraints
+* Sample data
+* Ready-to-use database views
+* Example SQL queries
+
+## Included Views
+
+### `vehicle_inventory`
+
+Provides a complete inventory of vehicles with category, branch, pricing, and status information.
+
+### `available_vehicles`
+
+Lists vehicles currently available for rental.
+
+### `rental_details`
+
+Provides detailed information about rentals, customers, vehicles, mileage, pricing, and status.
+
+### `active_rentals`
+
+Shows rentals that are currently active or overdue.
+
+### `payment_summary`
+
+Compares rental totals with completed payments and calculates remaining amounts.
+
+### `vehicle_maintenance_history`
+
+Provides maintenance history for every vehicle.
+
+## Database
+
+The database created by this project is:
+
+```text
+car_rental_db
+```
+
+## License
+
+This project is licensed under the MIT License.
