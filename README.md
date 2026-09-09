@@ -31,8 +31,6 @@ Every project is an independent MySQL database containing:
 
 The projects are intentionally independent and can be installed, tested, and explored separately.
 
----
-
 ## Projects
 
 | Project                   | Domain                | Description                                                               |
@@ -50,7 +48,6 @@ The projects are intentionally independent and can be installed, tested, and exp
 | [Cinema](cinema/)         | Cinema Management     | Movies, halls, seats, showtimes, bookings, tickets, and payments          |
 | [Airport](airport/)       | Airport Management    | Flights, airlines, aircraft, passengers, bookings, baggage, and check-ins |
 
----
 
 ## Project Highlights
 
@@ -69,7 +66,6 @@ A library management system for handling books, authors, publishers, members, li
 
 [View Project](library/)
 
----
 
 ### Gym
 
@@ -86,7 +82,6 @@ A gym management system covering members, trainers, membership plans, payments, 
 
 [View Project](gym/)
 
----
 
 ### Restaurant
 
@@ -104,7 +99,6 @@ A restaurant database designed around customers, employees, tables, menus, order
 
 [View Project](restaurant/)
 
----
 
 ### Hotel
 
@@ -123,7 +117,6 @@ A hotel management system for rooms, guests, employees, reservations, services, 
 
 [View Project](hotel/)
 
----
 
 ### E-commerce
 
@@ -143,7 +136,6 @@ An e-commerce database covering products, categories, customers, addresses, inve
 
 [View Project](ecommerce/)
 
----
 
 ### Hospital
 
@@ -162,7 +154,6 @@ A hospital management system covering departments, doctors, patients, appointmen
 
 [View Project](hospital/)
 
----
 
 ### School
 
@@ -182,7 +173,6 @@ A school management database designed around academic years, departments, studen
 
 [View Project](school/)
 
----
 
 ### Banking
 
@@ -202,7 +192,6 @@ A banking management system covering branches, customers, employees, account typ
 
 [View Project](banking/)
 
----
 
 ### Car Rental
 
@@ -221,7 +210,6 @@ A vehicle rental management system for branches, customers, vehicle categories, 
 
 [View Project](car-rental/)
 
----
 
 ### Inventory
 
@@ -242,7 +230,6 @@ An inventory and warehouse management system covering categories, suppliers, war
 
 [View Project](inventory/)
 
----
 
 ### Cinema
 
@@ -261,7 +248,6 @@ A cinema management system designed around cinemas, halls, seats, movies, genres
 
 [View Project](cinema/)
 
----
 
 ### Airport
 
@@ -283,7 +269,6 @@ An airport management system covering airports, terminals, gates, airlines, airc
 
 [View Project](airport/)
 
----
 
 ## Features
 
@@ -300,7 +285,6 @@ An airport management system covering airports, terminals, gates, airlines, airc
 * Independent database systems
 * Consistent project structure
 
----
 
 ## Database Design
 
@@ -320,7 +304,6 @@ Core design principles include:
 
 The projects are designed to demonstrate how multiple related entities can work together as a complete database system rather than as isolated SQL examples.
 
----
 
 ## Project Structure
 
@@ -335,7 +318,6 @@ project/
 
 Each project is completely independent from the others.
 
----
 
 ## Getting Started
 
@@ -368,7 +350,6 @@ The SQL script creates the required database, tables, relationships, constraints
 
 The same process can be used for any project in the collection.
 
----
 
 ## Usage
 
@@ -386,7 +367,6 @@ After importing a project, you can inspect:
 
 Refer to the individual project's `README.md` for project-specific documentation.
 
----
 
 ## Design Philosophy
 
@@ -396,7 +376,6 @@ SQLFoundry is based on the idea that learning relational databases is more effec
 
 Instead of isolated SQL exercises, each project models a different real-world domain and provides a structured environment for exploring database architecture, relationships, constraints, queries, and reporting.
 
----
 
 ## Author
 
@@ -404,7 +383,6 @@ Instead of isolated SQL exercises, each project models a different real-world do
 
 GitHub: [github.com/fouad-salehi](https://github.com/fouad-salehi)
 
----
 
 ## License
 
