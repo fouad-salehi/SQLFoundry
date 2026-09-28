@@ -11,7 +11,7 @@
 
 SQLFoundry is a collection of practical, independent database projects designed around real-world systems. Each project focuses on relational database design, data integrity, normalization, constraints, indexing, reporting, and practical SQL usage.
 
----
+
 
 ## Overview
 
