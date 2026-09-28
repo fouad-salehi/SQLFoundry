@@ -379,13 +379,9 @@ Instead of isolated SQL exercises, each project models a different real-world do
 
 ## Author
 
-**Fouad Salehi**
-
-GitHub: [github.com/fouad-salehi](https://github.com/fouad-salehi)
+[**Fouad Salehi**](https://github.com/fouad-salehi)
 
 
 ## License
 
-MIT License
-
-Copyright (c) 2026 Fouad Salehi
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
