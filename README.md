@@ -7,7 +7,7 @@
 ![Projects](https://img.shields.io/badge/projects-12-success)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-**SQLFoundry — A collection of standalone relational database systems built with MySQL.**
+<img width="1376" height="688" alt="SQLFoundry — A collection of standalone relational database systems built with MySQL" src="https://github.com/user-attachments/assets/ceff73f0-2fe0-499a-a0c2-6dd3544b90d8" />
 
 SQLFoundry is a collection of practical, independent database projects designed around real-world systems. Each project focuses on relational database design, data integrity, normalization, constraints, indexing, reporting, and practical SQL usage.
 
