@@ -9,10 +9,7 @@
 
 <img width="1376" height="688" alt="SQLFoundry — A collection of standalone relational database systems built with MySQL" src="https://github.com/user-attachments/assets/87c1dae5-ddc8-4669-89e0-40b00b3c8b2c" />
 
-
 SQLFoundry is a collection of practical, independent database projects designed around real-world systems. Each project focuses on relational database design, data integrity, normalization, constraints, indexing, reporting, and practical SQL usage.
-
-
 
 ## Overview
 
@@ -30,12 +27,13 @@ Every project is an independent MySQL database containing:
 * SQL views
 * Example queries
 
-The projects are intentionally independent and can be installed, tested, and explored separately.
+> [!NOTE]
+> The projects are intentionally independent and can be installed, tested, and explored separately.
 
 ## Projects
 
 | Project                   | Domain                | Description                                                               |
-| ------------------------- | --------------------- | ------------------------------------------------------------------------- |
+| :------------------------ | :-------------------- | :------------------------------------------------------------------------ |
 | [Library](library/)       | Library Management    | Books, authors, members, loans, reservations, copies, and fines           |
 | [Gym](gym/)               | Fitness Management    | Members, trainers, memberships, classes, attendance, and workouts         |
 | [Restaurant](restaurant/) | Restaurant Management | Customers, employees, tables, orders, reservations, and inventory         |
@@ -48,7 +46,6 @@ The projects are intentionally independent and can be installed, tested, and exp
 | [Inventory](inventory/)   | Warehouse Management  | Products, warehouses, suppliers, stock, purchases, and transfers          |
 | [Cinema](cinema/)         | Cinema Management     | Movies, halls, seats, showtimes, bookings, tickets, and payments          |
 | [Airport](airport/)       | Airport Management    | Flights, airlines, aircraft, passengers, bookings, baggage, and check-ins |
-
 
 ## Project Highlights
 
@@ -67,7 +64,6 @@ A library management system for handling books, authors, publishers, members, li
 
 [View Project](library/)
 
-
 ### Gym
 
 A gym management system covering members, trainers, membership plans, payments, classes, attendance, exercises, and workout plans.
@@ -82,7 +78,6 @@ A gym management system covering members, trainers, membership plans, payments, 
 * Workout plans
 
 [View Project](gym/)
-
 
 ### Restaurant
 
@@ -100,7 +95,6 @@ A restaurant database designed around customers, employees, tables, menus, order
 
 [View Project](restaurant/)
 
-
 ### Hotel
 
 A hotel management system for rooms, guests, employees, reservations, services, invoices, and payments.
@@ -117,7 +111,6 @@ A hotel management system for rooms, guests, employees, reservations, services, 
 * Room availability
 
 [View Project](hotel/)
-
 
 ### E-commerce
 
@@ -137,7 +130,6 @@ An e-commerce database covering products, categories, customers, addresses, inve
 
 [View Project](ecommerce/)
 
-
 ### Hospital
 
 A hospital management system covering departments, doctors, patients, appointments, medical records, medications, prescriptions, admissions, rooms, bills, and payments.
@@ -154,7 +146,6 @@ A hospital management system covering departments, doctors, patients, appointmen
 * Billing and payments
 
 [View Project](hospital/)
-
 
 ### School
 
@@ -174,7 +165,6 @@ A school management database designed around academic years, departments, studen
 
 [View Project](school/)
 
-
 ### Banking
 
 A banking management system covering branches, customers, employees, account types, accounts, beneficiaries, cards, transactions, loans, loan payments, and transfers.
@@ -193,7 +183,6 @@ A banking management system covering branches, customers, employees, account typ
 
 [View Project](banking/)
 
-
 ### Car Rental
 
 A vehicle rental management system for branches, customers, vehicle categories, vehicles, reservations, rentals, insurance, payments, and maintenance.
@@ -210,7 +199,6 @@ A vehicle rental management system for branches, customers, vehicle categories, 
 * Maintenance records
 
 [View Project](car-rental/)
-
 
 ### Inventory
 
@@ -231,7 +219,6 @@ An inventory and warehouse management system covering categories, suppliers, war
 
 [View Project](inventory/)
 
-
 ### Cinema
 
 A cinema management system designed around cinemas, halls, seats, movies, genres, customers, showtimes, bookings, tickets, and payments.
@@ -248,7 +235,6 @@ A cinema management system designed around cinemas, halls, seats, movies, genres
 * Revenue reporting
 
 [View Project](cinema/)
-
 
 ### Airport
 
@@ -270,7 +256,6 @@ An airport management system covering airports, terminals, gates, airlines, airc
 
 [View Project](airport/)
 
-
 ## Features
 
 * MySQL 8.0+
@@ -285,7 +270,6 @@ An airport management system covering airports, terminals, gates, airlines, airc
 * Practical SQL queries
 * Independent database systems
 * Consistent project structure
-
 
 ## Database Design
 
@@ -303,8 +287,9 @@ Core design principles include:
 * Reporting views
 * Practical SQL operations
 
-The projects are designed to demonstrate how multiple related entities can work together as a complete database system rather than as isolated SQL examples.
-
+> [!TIP]
+> The projects are designed to demonstrate how multiple related entities can work together
+> as a complete database system rather than as isolated SQL examples.
 
 ## Project Structure
 
@@ -318,7 +303,6 @@ project/
 ```
 
 Each project is completely independent from the others.
-
 
 ## Getting Started
 
@@ -347,10 +331,11 @@ Run the SQL script:
 mysql -u your_username -p < airport.sql
 ```
 
-The SQL script creates the required database, tables, relationships, constraints, indexes, sample data, and views.
+> [!NOTE]
+> The SQL script creates the required database, tables, relationships, constraints,
+> indexes, sample data, and views.
 
 The same process can be used for any project in the collection.
-
 
 ## Usage
 
@@ -368,7 +353,6 @@ After importing a project, you can inspect:
 
 Refer to the individual project's `README.md` for project-specific documentation.
 
-
 ## Design Philosophy
 
 > **Build the database. Understand the system.**
@@ -377,11 +361,9 @@ SQLFoundry is based on the idea that learning relational databases is more effec
 
 Instead of isolated SQL exercises, each project models a different real-world domain and provides a structured environment for exploring database architecture, relationships, constraints, queries, and reporting.
 
-
 ## Author
 
 [**Fouad Salehi**](https://github.com/fouad-salehi)
-
 
 ## License
 
